@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="386dp"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/changecolor"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:title="邮问"
+                app:titleMarginStart="75pt"
+                app:titleTextColor="@color/white" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <include layout="@layout/qa_content_main" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatask"
+            android:layout_width="58pt"
+            android:layout_height="58pt"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="92dp"
+            android:layout_marginRight="48dp"
+            app:backgroundTint="@color/baseblue"
+            app:elevation="8dp" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="18dp"
+            app:srcCompat="@mipmap/toast" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView12"
+            android:layout_alignTop="@+id/imageView12"
+            app:srcCompat="@mipmap/ic_me_remind_icon" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView12"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@mipmap/shaixuan" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/qa_list"></include>
+</android.support.constraint.ConstraintLayout>

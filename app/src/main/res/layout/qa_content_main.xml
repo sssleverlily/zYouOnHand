@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp">
+    <Button
+        android:id="@+id/bt_whole"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="全部"
+        android:drawableBottom="@mipmap/dot_no"
+        android:background="@color/white"/>
+
+    <Button
+        android:id="@+id/bt_study"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bt_whole"
+        android:text="学习"
+        android:drawableBottom="@mipmap/dot_no"
+        android:background="@color/white"
+        />
+
+    <Button
+        android:id="@+id/bt_life"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bt_study"
+        android:text="生活"
+        android:drawableBottom="@mipmap/dot_no"
+        android:background="@color/white"/>
+
+    <Button
+        android:id="@+id/bt_feel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bt_life"
+        android:text="情感"
+        android:drawableBottom="@mipmap/dot_no"
+        android:background="@color/white"/>
+
+    <com.example.administrator.zyouonhand.other.MyViewPager
+        android:id="@+id/qa_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_life"
+        android:layout_weight="10">
+
+    </com.example.administrator.zyouonhand.other.MyViewPager>
+
+</RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

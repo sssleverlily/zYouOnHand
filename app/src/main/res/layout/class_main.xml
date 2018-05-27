@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/class_app_bar_main"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/bt_class"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:drawableTop="@mipmap/class_1"
+            android:text="课表"
+            android:background="@color/white"/>
+
+        <Button
+            android:id="@+id/bt_qa"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bt_class"
+            android:layout_alignParentBottom="true"
+            android:drawableTop="@mipmap/qa_1"
+            android:text="邮问"
+            android:background="@color/white"
+            />
+
+        <Button
+            android:id="@+id/bt_find"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bt_qa"
+            android:layout_alignParentBottom="true"
+            android:drawableTop="@mipmap/find_1"
+            android:text="发现"
+            android:background="@color/white"/>
+
+        <Button
+            android:id="@+id/bt_my"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bt_find"
+            android:layout_alignParentBottom="true"
+            android:drawableTop="@mipmap/my_1"
+            android:text="我的"
+            android:background="@color/white"/>
+
+
+
+
+    </RelativeLayout> <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/bt_class1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:drawableTop="@mipmap/class_1"
+        android:text="课表"
+        android:background="@color/white"/>
+
+    <Button
+        android:id="@+id/bt_qa1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bt_class1"
+        android:layout_alignParentBottom="true"
+        android:drawableTop="@mipmap/qa_1"
+        android:text="邮问"
+        android:background="@color/white"
+        />
+
+    <Button
+        android:id="@+id/bt_find1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bt_qa1"
+        android:layout_alignParentBottom="true"
+        android:drawableTop="@mipmap/find_1"
+        android:text="发现"
+        android:background="@color/white"/>
+
+    <Button
+        android:id="@+id/bt_my1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bt_find1"
+        android:layout_alignParentBottom="true"
+        android:drawableTop="@mipmap/my_1"
+        android:text="我的"
+        android:background="@color/white"/>
+
+
+
+
+</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
